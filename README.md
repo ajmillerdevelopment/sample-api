@@ -16,9 +16,8 @@ This is my technical assessment project for Hasura. For this project, I will be 
   
 ## Stretch Goals
 * Input validation:
-* * Only allow new weather reports if they match
-* * Do not allow wind directions in excess of 360 degrees
-* * Do not allow negative air pressure or wind speed
+  * Do not allow wind directions in excess of 360 degrees
+  * Do not allow negative air pressure or wind speed
 * METAR:
-* * Output GET requests in METAR format
-* * Input POST requests in METAR format
+ * Output GET requests in METAR format
+ * Input POST requests in METAR format
