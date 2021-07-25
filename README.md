@@ -8,11 +8,11 @@ This is my technical assessment project for Hasura. For this project, I will be 
 * Connect to MongoDB Atlas
 * GET / (with instructions for using the API)
 * GET /stations (returns a list of all weather stations in the database)
-* GET /<callsign> (returns up to 10 weather reports from matching station, chronological order, most recent first)
-* GET /<id> (returns 1 weather report by ID)
+* GET /{callsign} (returns up to 10 weather reports from matching station, chronological order, most recent first)
+* GET /{id} (returns 1 weather report by ID)
 * POST / (create a new weather report)
-* PUT /<id> (modify existing weather report)
-* DELETE /<id> (delete existing weather report)
+* PUT /{id} (modify existing weather report)
+* DELETE /{id} (delete existing weather report)
 * Deploy API to Heroku
   
 ## Stretch Goals
