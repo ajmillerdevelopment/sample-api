@@ -13,11 +13,25 @@ This is my technical assessment project for Hasura. For this project, I will be 
 * POST / (create a new weather report)
 * PUT /<id> (modify existing weather report)
 * DELETE /<id> (delete existing weather report)
+* Deploy API to Heroku
   
 ## Stretch Goals
 * Input validation:
   * Do not allow wind directions in excess of 360 degrees
   * Do not allow negative air pressure or wind speed
+  * Do not allow weather reports missing the following values:
+    * Date/Time
+    * Position
+    * Elevation
+    * Callsign
+    * Air Temp
+    * Dew Point
+    * Pressure
 * METAR:
   * Output GET requests in METAR format
   * Input POST requests in METAR format
+* Output plain language weather report
+* Output Temperature in both C and F
+* Output Air Pressure in both inch/HG and hPa
+* Output Date and Time in Z time
+* Create Second Model for weather stations & Migration script
