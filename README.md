@@ -19,5 +19,5 @@ This is my technical assessment project for Hasura. For this project, I will be 
   * Do not allow wind directions in excess of 360 degrees
   * Do not allow negative air pressure or wind speed
 * METAR:
- * Output GET requests in METAR format
- * Input POST requests in METAR format
+  * Output GET requests in METAR format
+  * Input POST requests in METAR format
