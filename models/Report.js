@@ -3,7 +3,6 @@ const mongoose = require('mongoose')
 const reportSchema = new mongoose.Schema({
     ts: Date,
     position: {
-        type: String,
         coordinates: [Number]
     },
     elevation: Number,
