@@ -28,6 +28,15 @@ const createReport = (req, res) => {
     })
 }
 
+const editReport = (req, res) => {
+    console.log(`Updating ${req.params.id}`)
+    db.Report.findByIdAndUpdate(req.params.id, req.body, {new: true}, (err, updatedReport) => {
+        if (err) throw err
+        console.log(updatedReport)
+        res.json(updatedReport)
+    })
+}
+
 // const getStations = (req, res) => {
 //     console.log(`Querying Stations...`)
 //     db.Report.find({}, 'callLetters').exec((err, foundStations) => {
@@ -40,5 +49,6 @@ const createReport = (req, res) => {
 module.exports = {
     getOneById,
     getByCall,
-    createReport
+    createReport,
+    editReport
 }
