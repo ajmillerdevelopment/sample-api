@@ -8,6 +8,8 @@ app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 
 app.get('/:id', controllers.reports.getOneById)
+app.get('/station/:call', controllers.reports.getByCall)
+app.get('/stations', controllers.reports.getStations)
 app.get('/', (req, res) => {
     res.send('<h1>Sample Weather API</h1>')
 })
