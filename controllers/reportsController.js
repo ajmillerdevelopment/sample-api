@@ -37,6 +37,15 @@ const editReport = (req, res) => {
     })
 }
 
+const deleteReport = (req, res) => {
+    console.log(`Deleting ${req.params.id}`)
+    db.Report.findByIdAndDelete(req.params.id, (err, deletedReport) => {
+        if (err) throw err
+        console.log(deletedReport)
+        res.send(`Report ${req.params.id} Deleted`)
+    })
+}
+
 // const getStations = (req, res) => {
 //     console.log(`Querying Stations...`)
 //     db.Report.find({}, 'callLetters').exec((err, foundStations) => {
@@ -50,5 +59,6 @@ module.exports = {
     getOneById,
     getByCall,
     createReport,
-    editReport
+    editReport,
+    deleteReport
 }

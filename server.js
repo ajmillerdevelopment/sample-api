@@ -9,6 +9,7 @@ app.use(express.urlencoded({extended: true}))
 
 app.get('/:id', controllers.reports.getOneById)
 app.put('/:id', controllers.reports.editReport)
+app.delete('/:id', controllers.reports.deleteReport)
 app.get('/station/:call', controllers.reports.getByCall)
 // app.get('/stations', controllers.reports.getStations)
 app.post('/', controllers.reports.createReport)
