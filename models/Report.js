@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const reportSchema = new mongoose.mongo.Schema({
+const reportSchema = new mongoose.Schema({
     ts: Date,
     position: {
         type: String,
@@ -35,3 +35,5 @@ const reportSchema = new mongoose.mongo.Schema({
         }
     } 
 })
+const Report = mongoose.model('Report', reportSchema, 'data')
+module.exports = Report
