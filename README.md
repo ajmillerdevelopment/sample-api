@@ -1,6 +1,13 @@
 # sample-api
-
+## Intro
 This is my technical assessment project for Hasura. For this project, I will be building an API with Node.js and Express.js which will interact with a weather database stored in MongoDB Atlas. I chose Node because JavaScript is by far my most comfortable programming language. I chose Express and MongoDB because I have experience with those platforms from my General Assembly bootcamp. Two of the projects I built there (Alex and Tom's Art Blog and Wayfarer) had Express/Mongo backends. I will host the backend on Heroku and test it using Postman. Most of the projects I've worked on since graduating from the bootcamp have been primarily frontend working with React and CSS, so I was excited at the opportunity to work in the backend again.
+
+## Conclusion
+(I'm writing this at the conclusion of the project)
+
+I achieved MVP for the project by building a simple API with full CRUD on my chosen database. In total the project took me about 4 hours. I would liked to have spent some time on my stretch goals but I have a freelance project with deadlines coming up so my free time for this exercise was limited. 
+
+As far as things I would do differently in production, I think the biggest flaw with my current setup is the weather stations not being their own seperate model. A two-model approach with stations and weather reports being linked would simplify the process for the user and allow things like sending the most recent weather report for the station closet to their location. 
 
 ## Roadmap
 ### 1.0 (MVP)
